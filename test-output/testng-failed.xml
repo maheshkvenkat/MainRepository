@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TsetSuite]">
+  <test thread-count="5" name="Testsample(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="traning.TestNGKT">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="UserRegistor" invocation-numbers="0"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- traning.TestNGKT -->
+    </classes>
+  </test> <!-- Testsample(failed) -->
+</suite> <!-- Failed suite [TsetSuite] -->

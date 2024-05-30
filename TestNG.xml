@@ -1,0 +1,11 @@
+<suite name="TsetSuite">
+	<test name="Testsample">
+	<listeners>
+	<listener class-name="traning.TestListener"/>
+	</listeners>
+	<parameter name="Browser" value="Chrome"/>
+		<classes>
+			<class name="traning.TestNGKT"/>
+		</classes>
+	</test>
+</suite>
