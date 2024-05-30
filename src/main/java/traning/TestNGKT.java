@@ -110,5 +110,72 @@ public class TestNGKT {
 		
 		
 	}
+	
+	@Test
+	public void JavaKT()
+	{
+		String str="hear and hear again";
+		String text="My Name is Mahesh";
+		String str1="My name is mahesh";
+		System.out.println("Length of String "+text+"is "+text.length());
+		
+		System.out.println("Addition of two strings "+text.concat(" Kolukondu"));
+	 
+		System.out.println(text.endsWith("mahesh"));
+		System.out.println(text.startsWith("mahesh")); 
+		System.out.println(text.contains("mahesh"));
+		
+		System.out.println(text.equals(str1));
+		System.out.println(text.equalsIgnoreCase(str1));
+		
+		System.out.println(text.compareTo(str1));
+		System.out.println(text.compareToIgnoreCase(str1));
+		
+		System.out.println("replace() method output"+str.replace("hear","smell"));
+		System.out.println("replace() method output"+str.replaceAll("hear","smell"));
+		System.out.println("replace() method output"+str.replaceFirst("hear","smell"));
+		
+		System.out.println(" Substring of String is "+ text.substring(3,6)); 
+		
+		String[] splitarray=text.split(" ");
+		System.out.println("Split array of String "+text+" using for each loop is ");
+		for(String spltstr:splitarray)
+		{
+			System.out.println(spltstr);
+		}
+		
+		int size=splitarray.length;
+		System.out.println("Split array of String "+text+" using length of strsing method is  ");
+		for(int i=0;i<size;i++)
+		{
+			System.out.println(splitarray[i]);
+		}
+		
+		char[] charArr=text.toCharArray();
+		System.out.println("Split array of Characters "+text+" using for each loop is ");
+		for(char c:charArr)
+		{
+			System.out.println(c);
+		}
+		
+		int siz=charArr.length;
+		System.out.println("Char array of String "+text+" using length of strsing method is  ");
+		for(int i=0;i<siz;i++)
+		{
+			System.out.println(charArr[i]);
+		}
+		
+		System.out.println("Displaying of Char array of String in reverse direction is ");
+		for(int i=siz-1;i>=0;i--)
+		{
+			System.out.println(charArr[i]);
+		}
+		
+		String joinString=String.join(" ",str,str1,text);
+		System.out.println("Join String of "+str+str1+text+" is "+joinString);
+		
+		
+		
+	}
 
 }

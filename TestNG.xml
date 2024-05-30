@@ -1,11 +1,15 @@
 <suite name="TsetSuite">
 	<test name="Testsample">
-	<listeners>
-	<listener class-name="traning.TestListener"/>
-	</listeners>
-	<parameter name="Browser" value="Chrome"/>
+		<listeners>
+			<listener class-name="traning.TestListener" />
+		</listeners>
+		<parameter name="Browser" value="Chrome" />
 		<classes>
-			<class name="traning.TestNGKT"/>
+			<class name="traning.TestNGKT">
+				<methods>
+					<include name="JavaKT" />
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite>

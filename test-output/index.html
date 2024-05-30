@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TsetSuite" class="navigator-link ">
-                    <span>C:\PracticeSelenium\TestArtifact\TestNG.xml</span>
+                    <span>C:\PracticeSelenium\ClonedFolder\MainRepository\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content passed suite-TsetSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TsetSuite" title="traning.TestNGKT" class="method navigator-link" hash-for-method="UserRegistor(Kolukondu, Bhavani, Bhavani@gmail.com, Bhavani@123)">UserRegistor(Kolukondu, Bhavani, Bhavani@gmail.com, Bhavani@123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TsetSuite" title="traning.TestNGKT" class="method navigator-link" hash-for-method="UserRegistor(Kolukondu, Mahehs, Kvm@gmail.com, Kvm@123)">UserRegistor(Kolukondu, Mahehs, Kvm@gmail.com, Kvm@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TsetSuite" title="traning.TestNGKT" class="method navigator-link" hash-for-method="JavaKT">JavaKT</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TsetSuite -->
@@ -132,18 +127,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UserRegistor(Kolukondu, Bhavani, Bhavani@gmail.com, Bhavani@123)">
-                  </a> <!-- UserRegistor(Kolukondu, Bhavani, Bhavani@gmail.com, Bhavani@123) -->
-                  <span class="method-name">UserRegistor</span>
-                  <span class="parameters">(Kolukondu, Bhavani, Bhavani@gmail.com, Bhavani@123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UserRegistor(Kolukondu, Mahehs, Kvm@gmail.com, Kvm@123)">
-                  </a> <!-- UserRegistor(Kolukondu, Mahehs, Kvm@gmail.com, Kvm@123) -->
-                  <span class="method-name">UserRegistor</span>
-                  <span class="parameters">(Kolukondu, Mahehs, Kvm@gmail.com, Kvm@123)</span>
+                  <a name="JavaKT">
+                  </a> <!-- JavaKT -->
+                  <span class="method-name">JavaKT</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,7 +137,7 @@
         </div> <!-- panel TsetSuite -->
         <div panel-name="test-xml-TsetSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\PracticeSelenium\TestArtifact\TestNG.xml</span>
+            <span class="header-content">C:\PracticeSelenium\ClonedFolder\MainRepository\TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -164,7 +150,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Testsample&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;traning.TestNGKT&quot;/&gt;
+      &lt;class name=&quot;traning.TestNGKT&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;JavaKT&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- traning.TestNGKT --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Testsample --&gt;
 &lt;/suite&gt; &lt;!-- TsetSuite --&gt;
@@ -204,20 +194,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UserRegistor')
+data.setCell(0, 1, 'JavaKT')
 data.setCell(0, 2, 'traning.TestNGKT')
-data.setCell(0, 3, 5369);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UserRegistor')
-data.setCell(1, 2, 'traning.TestNGKT')
-data.setCell(1, 3, 4936);
+data.setCell(0, 3, 9);
 window.suiteTableData['TsetSuite']= { tableData: data, tableDiv: 'times-div-TsetSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 ms</span>
               <div id="times-div-TsetSuite">
               </div> <!-- times-div-TsetSuite -->
             </div> <!-- times-div -->
@@ -232,9 +218,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TsetSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">traning.TestNGKT</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">UserRegistor</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TsetSuite" class="panel">
@@ -249,24 +242,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">UserRegistor(Kolukondu, Mahehs, Kvm@gmail.com, Kvm@123)</span>
-                <span class="method-start">1439 ms</span>
+                <span class="method-name">JavaKT</span>
+                <span class="method-start">1372 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">6377 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">OpenBrowser(Chrome)</span>
-                <span class="method-start">6601 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">UserRegistor(Kolukondu, Bhavani, Bhavani@gmail.com, Bhavani@123)</span>
-                <span class="method-start">7365 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">CloseBrowser</span>
-                <span class="method-start">12735 ms</span>
+                <span class="method-start">1383 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
